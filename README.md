@@ -20,19 +20,20 @@ Steam Workshop link: https://steamcommunity.com/sharedfiles/filedetails/?id=2977
 
 `clhr_supertolerant 0` : the client is always right (not recommended for public servers)
 
-`clhr_targetbits 255` : bitfield for targets that are allowed for clientside hitreg (for if you want to exclude certain types of entities)
-1 = players
-2 = npcs
-4 = nextbots
-8 = vehicles
-16 = weapons
-32 = ragdolls
-64 = props
+`clhr_targetbits 255` : bitfield for targets that are allowed for clientside hitreg (for if you want to exclude certain types of entities)\
+1 = players\
+2 = npcs\
+4 = nextbots\
+8 = vehicles\
+16 = weapons\
+32 = ragdolls\
+64 = props\
 128 = other
 
 `clhr_nofirebulletsincallback 0` : prevent bullets from being fired inside the callbacks of client-registered hits
 (you may enable this if client-registered hits are causing some weirdness with certain implementations of bullet penetration)
 
-`clhr_subtick 0` : subtick hitreg simulation (very experimental, not recommended) <video>
+`clhr_subtick 0` : subtick hitreg simulation (very experimental, not recommended)\
+video demonstration: https://youtube.com/watch?v=rCLgx5wj4zk
 
 `clhr_printshots 0` : print attempts at client-registered hits in the console (for debug purposes)
