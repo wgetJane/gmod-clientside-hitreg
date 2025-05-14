@@ -1056,7 +1056,9 @@ local function dohits(ply, hit, lc)
 		local dmginfo = DamageInfo()
 
 		for k, v in pairs(h.dmginfo) do
-			dmginfo[k](dmginfo, v)
+			if not isentity(v) or IsValid(v) then
+				dmginfo[k](dmginfo, v)
+			end
 		end
 
 		local trace = h.newtrace
